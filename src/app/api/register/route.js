@@ -16,10 +16,10 @@ export const dynamic = "force-dynamic";
 export async function POST(req) {
   await connectToDB();
 
-  const { name, email, password, role } = await req.json();
+  const { name, email, password } = await req.json();
   //validate the schema
 
-  const { error } = schema.validate({ name, email, password, role });
+  const { error } = schema.validate({ name, email, password });
 
   if (error) {
   

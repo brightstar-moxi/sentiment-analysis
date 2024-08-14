@@ -4,7 +4,7 @@ import React, {useContext, useEffect, useState } from 'react'
 import Image from "next/image";
 // import Image1 from '/public/pic1.png'
 import Image2 from '/public/werty.png';
-
+import ComponentLevelLoader from "@/components/Loader/componentlevel";
 import { GlobalContext } from "@/context";
 import { registerNewUser } from "@/services/register";
 

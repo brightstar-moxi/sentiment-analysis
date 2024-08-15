@@ -23,7 +23,7 @@ const signup = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [isRegistered, setIsRegistered] = useState(false);
   const [loading, setLoading] = useState(false);
-  // const { pageLevelLoader, setPageLevelLoader , isAuthUser } = useContext(GlobalContext);
+  const { pageLevelLoader, setPageLevelLoader , isAuthUser } = useContext(GlobalContext);
 // const [values, setValues] = useState({
 //   name: '',
 //   email: '',
@@ -134,7 +134,7 @@ async function handleRegisterOnSubmit() {
               disabled={!isFormValid()}
               onClick={handleRegisterOnSubmit}
           >
-            {/* {pageLevelLoader ? (
+            {pageLevelLoader ? (
                       <ComponentLevelLoader
                         text={"Registering"}
                         color={"#ffffff"}
@@ -142,8 +142,8 @@ async function handleRegisterOnSubmit() {
                       />
                     ) : (
                       "Register"
-                    )} */}
-                    {loading ? 'Registering...' : 'Register'}
+                    )}
+                    {/* {loading ? 'Registering...' : 'Register'} */}
           </button>
         </form>
         <div className="text-center mt-4">

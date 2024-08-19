@@ -11,7 +11,7 @@ const configOptions = {
 // const apiUrl = process.env.DATABASE_MONGODB_SECRET;
 
 const connectToDB = async () => {
-  const connectionUrl = 'mongodb+srv://moxiz:123456782023@cluster0.vwvvdox.mongodb.net/';
+  const connectionUrl = 'mongodb+srv://brightstarmoxiz2:tiplingold@cluster0.2aszr.mongodb.net/';
 
   try {
     await mongoose.connect(connectionUrl, configOptions);

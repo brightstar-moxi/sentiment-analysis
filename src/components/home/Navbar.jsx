@@ -20,10 +20,10 @@ const navLinks =[
         title: "Sign Up",
         path: "/signup"
     },
-    {
-        title: "Sign In",
-        path: "/login"
-    }
+     {
+         title: "Sign In",
+         path: "/login"
+     }
 ]
 
 const Navbar = () => {
